@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>66-欢迎注册</title>
+		<link rel="stylesheet" href="css/zhuce.css">
+	</head>
+	<body>
+
+		<div class="zc_box">
+			<div class="zc_hed">
+				<div class="zc_logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="hycc">
+					<h1>欢迎注册</h1>
+				</div>
+				<div class="yyzh">
+					<h4><a href="#">已有帐户？请登录></a></h4>
+				</div>
+				<div class="fgx">
+					<hr class="fgx">
+				</div>
+				<!-- 分割线~~~~~~~~~~~ -->
+
+				<form action="" method="post">
+
+
+					<div class="zc_k">
+
+						<div class="hy">
+							<h2>用户注册</h2>
+						</div>
+						<div class="zhanghao cd">
+							<span></span>
+							<input type="text" name="" id="" value="" placeholder="请输入用户名" />
+						</div>
+						
+						<div class="mima cd">
+							<span></span>
+							<input type="password" name="pw" id="" value="" placeholder="请输入密码" />
+						</div>
+						<div class="mima cd">
+							<span></span>
+							<input type="password" name="repw" id="" value="" placeholder="请再次确认密码" />
+						</div>
+						<span id="tishi"></span></input>
+						<div class="sjh cd">
+							<span></span>
+							<input type="text" name="" id="" value="" placeholder="请输入您的手机号" />
+						</div>
+						<div class="youxiang cd">
+							<span></span>
+							<input type="text" name="" id="" value="" placeholder="请输入您的邮箱" />
+						</div>
+						<input type="submit" name="注册" id="btn" value="注册" src="" class="dl_butt_1 " onmouseover="this.style.backgroundColor='#d13439';"
+						 onmouseout="this.style.backgroundColor='';" />
+					</div>
+				</form>
+
+
+
+
+<script type="text/javascript">
+    	function checkpassword() {
+    		var password = document.getElementById("pw").value;
+    		var repassword = document.getElementById("repw").value;
+    		
+    		if(password == repassword) {
+    			 document.getElementById("tishi").innerHTML="<br><font color='green'>两次密码输入一致</font>";
+    			 document.getElementById("submit").disabled = false;
+    			
+			 }else {
+				 document.getElementById("tishi").innerHTML="<br><font color='red'>两次输入密码不一致!</font>";
+	    		 document.getElementById("submit").disabled = true; 
+			 } 
+    	}
+    </script>
+
+	</body>
+</html>

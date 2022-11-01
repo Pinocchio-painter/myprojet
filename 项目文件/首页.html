@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<title>66</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="购物商城,服装商城,化妆品商城,鞋子商城,商城模板,商城平台" />
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script type="text/javascript" src="js/jquery_cart.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/checkOut.css" />
+		<link rel="stylesheet" type="text/css" href="css/Rotation chart.css" />
+
+		<link href="css/base_2.css" rel="stylesheet" type="text/css">
+		<link href="css/css3.css" rel="stylesheet" type="text/css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+		<script src="js/base.min.js"></script>
+		<script type="text/javascript" src="js/address_all.js"></script>
+		<script type="text/javascript" src="js/checkout.min.js"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/unslider.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/superslide.2.1.js"></script>
+		<script src="js/nicescroll.js"></script>
+		<script type="text/jscript" src="js/jqnav.js"></script>
+
+		<style type="text/css">
+			/* div{
+		border: #000000 1px solid;
+	} */
+		</style>
+	</head>
+
+	<body>
+		<!--顶部快捷菜单-->
+		<div class="shortcut_v2013 alink_v2013">
+			<div class="w">
+				<ul class="fl 1h">
+
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd">您好，欢迎来到66商城！</div>
+					</li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">请登录</a></div>
+					</li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">免费注册</a></div>
+					</li>
+				</ul>
+				<ul class="fr 1h">
+					<li class="fl">
+						<div class="menu_hd"><a href="#">我的订单</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">我的66</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">服务中心</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+					</li>
+				</ul>
+				<span class="clr"></span>
+			</div>
+		</div>
+		<!--顶部快捷菜单-->
+
+
+		<!--顶部Logo及搜索-->
+		<div class="header_2013">
+			<div class="w">
+				<div class="logo_v2013">
+					<a href="#">
+
+						<img class="border_r" src="" width="120" height="50">
+						<img class="border_r" src="" width="120" height="50">
+						<img src="img/logo.png" width="120" height="40">
+					</a>
+				</div>
+				<div class="header_searchbox">
+					<form action="#">
+						<input name="search" type="text" class="header_search_input" placeholder="搜索你心爱的商品吧" autocomplete="off"
+						 x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh">
+						<button type="submit" class="header_search_btn">搜索</button>
+					</form>
+					<ul class="hot_word">
+						<li><a class="red" href="首页.html" target="_blank">首页</a></li>
+						<li><a target="_blank" href="#">百货五折</a></li>
+						<li><a target="_blank" href="#">大闸蟹</a></li>
+						<li><a target="_blank" href="#">年货</a></li>
+						<li><a target="_blank" href="#">电子产品</a></li>
+					</ul>
+				</div>
+				<div id="cart_box" class="cart_box" style="z-index:999;">
+					<a id="cart" class="cart_link" href="#" rel="nofollow">
+						<span class="text">去购物车结算</span>
+						<img src="images/shopping_icon.png" width="24" height="24" class="cart_gif">
+
+						<!-- 购物车没有物品时，隐藏此num -->
+						<span class="num">0</span>
+						<s class="icon_arrow_right"></s>
+					</a>
+
+					<div class="cart_content" id="cart_content">
+						<i class="cart-icons"></i>
+						<!-- 购物车没有物品时，显示cart_content_null、隐藏cart_content_all -->
+						<div class="cart_content_null" style="display: block;">购物车中还没有商品，<br>快去挑选心爱的商品吧！</div>
+
+						<div class="cart_content_all" style="display:none ;">
+							<div class="cart_left_time"><span>五十年</span> 后购物车将被清空，请不要结算</div>
+							<div class="cart_content_center">
+								<div class="cart_con_single">
+									<div class="single_pic">
+										<a href="#" target="_blank" alt="商品" />
+										<img src=" images/goods_img01.jpg" />
+										</a>
+									</div>
+									<div class="single_info">
+										<a href="#" target="_blank" alt="商品" class="name">我的什么什么商品半详细信息</a><!-- 给用户显示的商品信息 -->
+										<span class="price">数据库中的价格</span><!-- 数据库中的价格 -->
+										<span class="price_plus"> x </span>
+										<span class="price_num">1</span><!-- 数量 -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="con_all">
+							<div class="price_whole"><span>共<span class="num_all">0</span>件商品</span></div>
+							<div><span class="price_gongji">共计<em>￥</em><span class="total_price">0</span></span><a href="#" class="cart_btn"
+								 rel="nofollow">去购物车结算</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!--顶部Logo及搜索-->
+
+				<div style="width: 100%; height: 105px;"></div>
+				<!--  导航条    end-->
+
+				<!-- 购物车 -->
+				<div class="border_top_cart">
+					<script src="http://www.jq22.com/jquery/vue.min.js"></script>
+					<script type="text/javascript" src="js/Rotation chart JS.js"></script>
+
+					<script type="text/javascript">
+						var checkoutConfig = {
+							addressMatch: 'common',
+							addressMatchVarName: 'data',
+							hasPresales: false,
+							hasBigTv: false,
+							hasAir: false,
+							hasScales: false,
+							hasGiftcard: false,
+							totalPrice: 244.00,
+							showCouponBox: 0,
+							invoice: {
+								NA: "0",
+								personal: "1",
+								company: "2",
+								electronic: "4"
+							}
+						};
+						var miniCartDisable = true;
+					</script>
+
+
+					<script id="newAddrTemplate" type="text/x-dot-template">
+						<dl class="item selected" data-isnew="true" data-consignee="{{=it.consignee}}" data-tel="{{=it.tel}}" data-province="{{=it.province}}" data-provincename="{{=it.provinceName}}" data-city="{{=it.city}}" data-cityname="{{=it.cityName}}" data-county="{{=it.county}}" data-countyname="{{=it.countyName}}" data-zipcode="{{=it.zipcode}}" data-street="{{=it.street}}" data-tag="{{=it.tag}}">
+            <dt>
+                <strong class="itemConsignee">{{=it.consignee}}</strong>
+                {{? it.tag }}
+                    <span  class="itemTag tag">{{=it.tag}}</span>
+                {{?}}
+            </dt>
+            <dd>
+                <p class="tel itemTel">{{=it.tel}}</p>
+                <p  class="itemRegion">{{=it.provinceName}} {{=it.cityName}} {{=it.countyName}}</p>
+                <p  class="itemStreet">{{=it.street}} ({{=it.zipcode}})</p>
+                <span class="edit-btn J_editAddr">编辑</span>
+            </dd>
+        </dl>
+</script>
+				</div>
+
+
+
+
+				<div class="search_top">
+					<div class="search_top_ner">
+						<div class="search_logo"><img src="img/logo.png" style="width:55px; height: 40px ; padding-left: 40px;"></div>
+						<div class="search_nav">
+							<a href="#">商城</a>
+							<a href="#">秒杀专场</a>
+							<a href="#">精品特区</a>
+							<a href="#">智能生活</a>
+							<a href="#">营业厅</a>
+							<a href="#">趣图趣闻</a>
+						</div>
+						<div class="search_ser">
+							<input name="" type="text" placeholder="请输入您想搜索的商品名称" class="search_top_text"><input name="" type="button" value="搜索"
+							 class="search_top_botton">
+						</div>
+					</div>
+				</div>
+
+				<!--头部body部分结束-->
+				<!-- 轮播图 -->
+				<div class="banner">
+
+					<div class="slider" style="position: absolute;top: 1px;z-index:1;">
+						<div class="bd">
+							<ul>
+								<li><a href="#"><img src="images/1.jpg" /></a></li>
+								<li><a href="#"><img src="images/2.jpg" /></a></li>
+								<li><a href="#"><img src="images/3.jpg" /></a></li>
+								<li><a href="#"><img src="images/4.jpg" /></a></li>
+							</ul>
+						</div>
+						<div class="hd">
+							<ul></ul>
+						</div>
+						<div class="pnBtn prev"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+						<div class="pnBtn next"><span class="blackBg"></span><a class="arrow" href="javascript:void(0)"></a></div>
+					</div>
+					<!-- 菜单 -->
+					<div class="menu">
+						<ul>
+							<li>
+								<i><img src="images/menu-01.png"></i><span>火爆推荐</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n" style="height:440px!important;opacity:1;">
+									<div class="menu_r" style="height:440px!important;">
+										<section class="cr-container">
+											<input id="select-img-1" name="radio-set-1" type="radio" class="cr-selector-img-1" checked />
+											<label for="select-img-1" class="cr-label-img-1"></label>
+											<input id="select-img-2" name="radio-set-1" type="radio" class="cr-selector-img-2" />
+											<label for="select-img-2" class="cr-label-img-2"></label>
+											<input id="select-img-3" name="radio-set-1" type="radio" class="cr-selector-img-3" />
+											<label for="select-img-3" class="cr-label-img-3"></label>
+											<input id="select-img-4" name="radio-set-1" type="radio" class="cr-selector-img-4" />
+											<label for="select-img-4" class="cr-label-img-4"></label>
+											<div class="clr"></div>
+											<div class="cr-bgimg">
+												<div>
+													<span>Slice 1 - Image 1</span>
+													<span>Slice 1 - Image 2</span>
+													<span>Slice 1 - Image 3</span>
+													<span>Slice 1 - Image 4</span>
+												</div>
+												<div>
+													<span>Slice 2 - Image 1</span>
+													<span>Slice 2 - Image 2</span>
+													<span>Slice 2 - Image 3</span>
+													<span>Slice 2 - Image 4</span>
+												</div>
+												<div>
+													<span>Slice 3 - Image 1</span>
+													<span>Slice 3 - Image 2</span>
+													<span>Slice 3 - Image 3</span>
+													<span>Slice 3 - Image 4</span>
+												</div>
+												<div>
+													<span>Slice 4 - Image 1</span>
+													<span>Slice 4 - Image 2</span>
+													<span>Slice 4 - Image 3</span>
+													<span>Slice 4 - Image 4</span>
+												</div>
+											</div>
+											<!-- <div class="cr-titles">
+												
+												<h3><a href="#"><span>点我真的！</span></a><span>你一直梦想着什么</span></h3>
+												<h3><a href="#"><span>。。。</span></a><span>乐趣从哪里开始</span></h3>
+												<h3><a href="#"><span>自然</span></a><span>难忘的经历</span></h3>
+												<h3><a href="#"><span>宁静</span></a><span>当沉默触及自然</span></h3>
+											</div> -->
+										</section>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-02.png"></i><span>服装/箱包</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>男装</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">品牌新品</a>
+												<a href="#">商场同款</a>
+												<a href="#">休闲裤</a>
+												<a href="#">牛仔裤</a>
+												<a href="#">衬衫</a>
+												<a href="#">短裤</a>
+												<a href="#">亚麻裤</a>
+												<a href="#">薄夹克</a>
+												<a href="#">单西</a>
+												<a href="#">短风衣</a>
+												<a href="#">毛衣</a>
+												<a href="#">针织衫</a>
+												<a href="#">运动外套</a>
+												<a href="#">运动短袖</a>
+												<a href="#">运动短裤</a>
+												<a href="#">健身套装</a>
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>女装</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">潮流新品</a>
+												<a href="#">雪纺蕾丝</a>
+												<a href="#">商场同款</a>
+												<a href="#">连衣裙</a>
+												<a href="#">针织衫</a>
+												<a href="#">毛衣</a>
+												<a href="#">卫衣</a>
+												<a href="#">小西装</a>
+												<a href="#">衬衫</a>
+												<a href="#">风衣</a>
+												<a href="#">热裤</a>
+												<a href="#">短外套</a>
+												<a href="#">休闲裤</a>
+												<a href="#">牛仔裤</a>
+												<a href="#">哈伦裤</a>
+												<a href="#">中老年装</a>
+												<a href="#">半身裙</a>
+												<a href="#">打底衫</a>
+												<a href="#">打底裤</a>
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>童装</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">儿童外套</a>
+												<a href="#">儿童套装</a>
+												<a href="#">儿童裤子</a>
+												<a href="#">儿童羽绒服</a>
+												<a href="#">儿童配饰</a>
+												<a href="#">毛衣针织衫</a>
+												<a href="#">儿童裙子</a>
+												<a href="#">儿童居家服</a>
+												<a href="#">儿童内衣裤</a>
+												<a href="#">儿童袜子</a>
+												<a href="#">儿童T恤</a>
+												<a href="#">儿童衬衫</a>
+												<a href="#">礼服汉服</a>
+												<a href="#">儿童校服</a>
+												<a href="#">儿童防晒衣</a>
+												<a href="#">儿童演出服</a>
+												<a href="#">儿童泳衣裤</a>
+
+											</div>
+										</dt>
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-03.png"></i><span>食品/特产</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>零食</span></div>
+											<div class="menu_name">
+												<a href="#">零食大礼包</a>
+												<a href="#">健康轻零食</a>
+												<a href="#">饼干</a>
+												<a href="#">蛋黄酥</a>
+												<a href="#">糖果</a>
+												<a href="#">薯片</a>
+												<a href="#">冻干</a>
+												<a href="#">巧克力</a>
+												<a href="#">月饼</a>
+												<a href="#">网红ip</a>
+												<a href="#">海味</a>
+												<a href="#">儿童零食</a>
+												<a href="#">趣味零食</a>
+												<a href="#">新鲜零食</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>方便素食</span></div>
+											<div class="menu_name">
+												<a href="#">方便面</a>
+												<a href="#">熟食</a>
+												<a href="#">粉丝米线</a>
+												<a href="#">快手菜</a>
+												<a href="#">开胃下饭菜</a>
+												<a href="#">方便粥饭</a>
+												<a href="#">火腿肠</a>
+												<a href="#">煎饼冷面</a>
+												<a href="#">速冻面点</a>
+												<a href="#">午餐肉</a>
+												<a href="#">甜头罐头</a>
+												<a href="#">挂面</a>
+												<a href="#">自嗨锅</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>乳饮冰</span></div>
+											<div class="menu_name">
+												<a href="#">酸奶</a>
+												<a href="#">纯牛奶</a>
+												<a href="#">奶粉</a>
+												<a href="#">乳酸饮料</a>
+												<a href="#">鲜奶</a>
+												<a href="#">碳酸饮料</a>
+												<a href="#">冰淇淋</a>
+												<a href="#">饮用水</a>
+												<a href="#">儿童奶粉</a>
+												<a href="#">奶酪</a>
+
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>名酒</span></div>
+											<div class="menu_name">
+												<a href="#">名优白酒</a>
+												<a href="#">微醺红酒</a>
+												<a href="#">果酒</a>
+												<a href="#">清爽啤酒</a>
+												<a href="#">格调洋酒</a>
+												<a href="#">新锐网红酒</a>
+												<a href="#">名酒礼盒</a>
+												<a href="#">养生黄酒</a>
+												<a href="#">保健食品酒</a>
+
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>茶/下午茶</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#"></a>
+												<a href="#">花菜茶</a>
+												<a href="#">新鲜蛋糕</a>
+												<a href="#">红茶</a>
+												<a href="#">新潮奶茶</a>
+												<a href="#">普洱</a>
+												<a href="#">每日坚果</a>
+												<a href="#">白茶</a>
+												<a href="#">乌龙茶</a>
+
+
+											</div>
+										</dt>
+
+
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-04.png"></i><span>美妆/彩妆</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>护肤</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">护肤套装</a>
+												<a href="#">面膜</a>
+												<a href="#">乳液面霜</a>
+												<a href="#">洁面</a>
+												<a href="#">精华</a>
+												<a href="#">润唇膏</a>
+												<a href="#">眼霜</a>
+												<a href="#">男士洁面</a>
+												<a href="#">化妆水</a>
+												<a href="#">卸妆</a>
+												<a href="#">鼻贴</a>
+												<a href="#">防晒</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>彩妆</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">口红</a>
+												<a href="#">粉底</a>
+												<a href="#">彩妆套装</a>
+												<a href="#">眼线眼影</a>
+												<a href="#">隔离</a>
+												<a href="#">化妆工具</a>
+												<a href="#">修容</a>
+												<a href="#">睫毛膏</a>
+												<a href="#">眉粉</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>美容</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">香水</a>
+												<a href="#">手膜手霜</a>
+												<a href="#">美甲</a>
+												<a href="#">美容仪</a>
+
+
+											</div>
+										</dt>
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-05.png"></i><span>家电/数码</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>手机</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">华为手机</a>
+												<a href="#">苹果手机</a>
+												<a href="#">vivo手机</a>
+												<a href="#">小米手机</a>
+												<a href="#">oppo手机</a>
+												<a href="#">三星手机</a>
+												<a href="#">荣耀手机</a>
+												<a href="#">魅族手机</a>
+												<a href="#">荣耀30p</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>手机配件</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">手机壳</a>
+												<a href="#">手机耳机</a>
+												<a href="#">充电宝</a>
+												<a href="#">数据线</a>
+												<a href="#">手机充电器</a>
+												<a href="#">手机贴膜</a>
+												<a href="#">手机贴纸</a>
+												<a href="#">手机挂件</a>
+												<a href="#">自拍杆</a>
+												<a href="#">手机电池</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>通信服务/手机服务</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">手机流量卡</a>
+												<a href="#">话费充值</a>
+												<a href="#">手机维修</a>
+												<a href="#">流量充值</a>
+
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>乐器</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">吉他</a>
+												<a href="#">钢琴</a>
+												<a href="#">电子琴</a>
+												<a href="#">小提琴</a>
+
+
+											</div>
+										</dt>
+
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-07.png"></i><span>家居/建材</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>床上用品</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">床品套件</a>
+												<a href="#">被子被芯</a>
+												<a href="#">枕头枕巾</a>
+												<a href="#">床品配饰</a>
+												<a href="#">凉席蚊帐</a>
+												<a href="#">儿童床品</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>窗帘布艺</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">居家拖鞋</a>
+												<a href="#">窗帘门帘</a>
+												<a href="#">地毯地垫</a>
+												<a href="#">防尘保护罩</a>
+												<a href="#">毛巾浴袍</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>家居装饰</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">创意摆件</a>
+												<a href="#">墙面装饰</a>
+												<a href="#">家用装饰</a>
+												<a href="#">香薰用品</a>
+												<a href="#">家用钟饰</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>家装建材</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">枪支背景墙</a>
+												<a href="#">瓷砖</a>
+												<a href="#">地板</a>
+												<a href="#">防水材料</a>
+												<a href="#">隔音隔热</a>
+
+											</div>
+										</dt>
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-08.png"></i><span>手表/眼镜/珠宝饰品</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>服配</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">围巾</a>
+												<a href="#">毛线帽</a>
+												<a href="#">棒球帽</a>
+												<a href="#">渔夫帽</a>
+												<a href="#">男士腰带</a>
+												<a href="#">手套</a>
+												<a href="#">贝雷帽</a>
+												<a href="#">丝巾</a>
+												<a href="#">女士腰带</a>
+												<a href="#">瓜皮帽</a>
+												<a href="#">雷锋帽</a>
+												<a href="#">礼帽</a>
+												<a href="#">草帽</a>
+												<a href="#">防晒袖</a>
+												<a href="#">遮阳帽</a>
+
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>潮搭</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">项链</a>
+												<a href="#">耳饰</a>
+												<a href="#">戒指</a>
+												<a href="#">发饰</a>
+												<a href="#">手链</a>
+												<a href="#">串指</a>
+												<a href="#">脚链</a>
+												<a href="#">胸针</a>
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>手表/眼镜</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">瑞士腕表 </a>
+												<a href="#">国产腕表</a>
+												<a href="#">日韩腕表</a>
+												<a href="#">欧美腕表</a>
+												<a href="#">太阳镜</a>
+												<a href="#">光学眼镜</a>
+												<a href="#">防蓝光眼镜</a>
+												<a href="#">老花镜</a>
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>珠宝</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">黄金</a>
+												<a href="#">和田玉</a>
+												<a href="#">钻石</a>
+												<a href="#">翡翠</a>
+												<a href="#">珍珠</a>
+												<a href="#">宝石</a>
+												<a href="#">琥珀</a>
+											
+											</div>
+										</dt>
+										
+
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<i><img src="images/menu-09.png"></i><span>医药保健/进口</span>
+								<dd><img src="images/jian.png"></dd>
+								<div class="menu_n">
+									<div class="menu_r">
+										<dt>
+											<div class="menu_bt"><span>家庭常备药</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">解热镇痛</a>
+												<a href="#">鼻炎</a>
+												<a href="#">滴眼液</a>
+												<a href="#">痔疮</a>
+												<a href="#">肠胃炎</a>
+												<a href="#">消化不良</a>
+												<a href="#">护肝</a>
+												<a href="#">消化道溃疡</a>
+												<a href="#">中耳炎</a>
+												<a href="#">腹泻</a>
+											</div>
+										</dt>
+										<dt>
+											<div class="menu_bt"><span>皮肤用药</span><a href="#">更多</a></div>
+											<div class="menu_name">
+												<a href="#">真菌感染</a>
+												<a href="#">皮肤湿疹</a>
+												<a href="#">冻疮烫伤</a>
+												<a href="#">银屑病</a>
+												<a href="#">皮肤疱疹</a>
+												<a href="#">防脱发</a>
+												<a href="#">抗菌消炎</a>
+												<a href="#">疤痕</a>
+										
+											</div>
+										</dt>
+										<dl style="height:15px;width:100%;float:left;"></dl>
+									</div>
+								</div>
+							</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="menu_bg"></div>
+					</div>
+
+
+				</div>
+
+				<div class="shopping">
+					<!-- 别点了真的亏了 -->
+					<div class="tips"><img src="images/tips_01.png" style="width: 1200px; height: 150px;"></a></div>
+					<ul>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_001.jpg">
+								<span>Olay是一款全球领导护肤品牌，60年来倍受全球女性信任挚爱。Olay一直坚持深入聆听女性需求，并通过将尖端护肤科技注入产品以满足女性日新月异的护肤需求。</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_001.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_002.jpg">
+								<span>雅诗兰黛(Estee
+									Lauder)中国官方网站。100%官方正品保证，“每一位女性皆可美丽动人”，品牌的至美初衷尽在官网。为您臻选明星护肤和彩妆产品：小棕瓶修护家族、红石榴系列、倾慕彩妆系列。更有官网独享精美礼盒套装，顺丰速运，现货发售。</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_002.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_003.jpg">
+								<span>NIKE公司总部位于美国俄勒冈州波特兰市。公司生产的体育用品包罗万象，例如服装，鞋类，运动器材等。NIKE是全球著名的体育运动品牌，英文原意指希腊胜利女神，中文译为耐克。耐克商标图案是个小钩子。耐克一直将激励全世界的每一位运动员并为其献上最好的产品.</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_003.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_004.jpg">
+								<span>vivo是一个专注于智能手机领域的国际化品牌,vivo官网提供手机资讯,售前咨询,在线购买,售后服务.vivo当季明星机型有X50系列、X30系列、NEX 3S、iQOO Z1、iQOO Neo3等</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_004.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_005.jpg">
+								<span>华为是全球领先的ICT(信息与通信)基础设施和智能终端提供商,致力于把数字世界带入每个人、每个家庭、每个组织,构建万物互联的智能世界。</span>
+							</div>
+			 				<div class="goods_right"><img src="images/goods_005.jpg"></div>
+						</li>
+
+						<li>
+							<div class="goods_left"> 
+								<img src="images/goods_logo_006.jpg">
+								<span>索尼中国在线商城,在线购买索尼手机,索尼电视,相机,家庭音响产品等消费类电子产品,尽在索尼官方旗舰店.在Sony官网轻松完成产品注册,即刻加入My Sony Club!</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_006.jpg"></div>
+						</li>
+						<div class="clear"></div>
+					</ul>
+					<!-- 别点了真的亏了 -->
+					<div class="tips"><a href="#"><img src="images/tips_02.png"></a></div>
+					<ul>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_007.jpg">
+								<span>ANTA一般指安踏。安踏体育用品有限公司
+									(港交所：2020)，简称安踏体育、安踏，是中国领先的体育用品企业，主要从事设计、开发、制造和行销安踏品牌的体育用品，包括运动鞋、服装及配饰。安踏：安踏是定位于大众的专业体育用品品牌，专注于为最广大的普通消费</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_007.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_008.jpg">
+								<span>盼盼集团是以生产盼盼高级安全门、防火门、安全窗、彩色钢质夹层墙体板、 全自动车库门、防爆散热器、自行车变速器、钢结构为主业，以开发新型建筑材料为主导，集工、商、贸为一体的多功能、多元化、外向型的现代企业集团。</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_008.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_009.jpg">
+								<span>蒙牛乳业（集团）股份有限公司（简称蒙牛乳业或蒙牛），成立于1999年8月，总部设在内蒙古呼和浩特市和林格尔县盛乐经济园区，是国家农业产业化重点龙头企业、乳制品行业龙头企业。蒙牛是中国领先的乳制品供应商，专注于研发生产适合国人健康的乳制品</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_009.jpg"></div>
+						</li>
+						<li>
+							<div class="goods_left">
+								<img src="images/goods_logo_0010.jpg">
+								<span>苹果公司（Apple Inc. ）是美国一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等人于1976年4月1日创立，并命名为美国苹果电脑公司（Apple Computer
+									Inc. ），2007年1月9日更名为苹果公司，总部位于加利福尼亚州的库比蒂诺。</span>
+							</div>
+							<div class="goods_right"><img src="images/goods_0010.jpg"></div>
+						</li>
+
+
+						<div class="clear"></div>
+					</ul>
+					<div class="clear"></div>
+
+					<!-- 别点了真的亏了 -->
+				</div>
+
+				<!-- 商品列表 品牌标识 -->
+				<div class="tips"><a href="#"><img src="images/tips_03.png"></a></div>
+
+
+				<div class="conter">
+					<div class="conter_ner">
+						<div class="conter_left">
+							<div class="conter_left_box">
+								<div class="conter_left_img"><img src="images/conter_left_01.jpg"></div>
+								<div class="conter_show_ad1">
+									<a href="#"></a>
+									<a href="#"></a>
+								</div>
+								<div class="conter_show_ad2">
+									<a href="#"></a>
+								</div>
+								<div class="conter_show_ad1">
+									<a href="#"><img src="images/conter_add_04.jpg"></a>
+									<a href="#"><img src="images/conter_add_05.jpg"></a>
+								</div>
+							</div>
+						</div>
+						<div class="conter_right">
+							<div class="conter_right_brand" style="height: 391px;">
+								<ul>
+									<li><a href="#"><img src="images/brand_001.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_001.jpg"><span>DANIEL HECHTER品牌是法国著名设计师，是由Mr. Daniel Hechter于1962年以其名字命名的品牌。DANIEL HECHTER专厅遍布全球200多个城市，全球分店超过2500间，以及拥有65个分布于世界各地的特许代理商。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_002.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_002.jpg"><span>出生于西班牙的Cristobal Balenciaga于1917年创立品牌，并于1937年落户巴黎。 2015年，Demna Gvasalia 获委任品牌艺术总监，品牌以革新的剪裁与裁缝技术， 承传Balenciaga先生一直秉持的美学理念。 Balenciaga提供男女成衣、手袋、鞋履、配饰与眼镜。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_003.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_003.jpg"><span>PUMA（彪马）是德国运动品牌，提出全新品牌口号Forever Faster，设计提供专业运动装备，产品涉及跑步、足球、高尔夫乃至赛车领域。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_004.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_004.jpg"><span>古驰Gucci，读作ɡu:tri:，是一间意大利时装品牌，由古驰奥·古驰在1921年于佛罗伦斯创办。古驰的产品包括时装、皮具、皮鞋、手表、领带、丝巾、香水、家居用品及宠物用品等，中文译作古琦、古驰。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_005.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_005.jpg"><span>MCM是一个轻奢时装品牌，1976年 [1]  创始于德国的慕尼黑。MCM最早以制作皮具起家，在上世纪80年代该品牌的全盛时期，MCM生产包括珠宝、手表、香水、服装、箱包以及小型皮具等在内的超过五百款的产品。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_006.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_006.jpg"><span>博柏利（Burberry）是极具英国传统风格的奢侈品牌，其多层次的产品系列满足了不同年龄和性别消费者需求，公司采用零售、批发和授权许可等方式使其知名度享誉全球。博柏利（Burberry）创办于1856年 [1]  ，是英国皇室御用品。过去的几十年，Burberry主要以生产雨衣，伞具及丝巾为主，而今博柏利强调英国传统高贵的设计，赢取无数人的欢心，成为一个永恒的品牌。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_007.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_007.jpg"><span>自1854年以来，代代相传的路易威登，以卓越品质、杰出创意和精湛工艺成为时尚旅行艺术的象征 [1]  。产品包括手提包，旅行用品，小型皮具，配饰，鞋履，成衣，腕表，高级珠宝及个性化订制服务等。</span></a></div>
+									</li>
+									<li><a href="#"><img src="images/brand_008.jpg"></a>
+										<div class="conter_right_block"><a href="#"><img src="images/brand_block_008.jpg"><span>范思哲经营服饰、香水、眼镜、领带、皮件、包袋、瓷器、玻璃器皿、丝巾、羽绒制品、家具产品等。品牌标志是神话中的蛇发女妖美杜莎（Medusa），代表着致命的吸引力。来自意大利的奢侈品牌范思哲创造了一个独特的时尚帝国，代表着一个品牌家族，它的时尚产品统领了生活的每个领域，其设计风格鲜明，美感独特。</span></a></div>
+									</li>
+								</ul>
+							</div>
+							<div class=""></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+<!-- 商品列表页面 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- 底部 -->
+
+
+
+
+
+				<div class="bottom">
+					<div class="bottom_city"></div>
+
+					<div class="footer_v2013 bottom-about" style="height: 200px;">
+						<div class="w">
+							<p class="foot_p1">
+								<a href="#">首页</a>|<a href="#">招聘英才</a>|<a href="#">广告合作</a>|<a href="#">联系我们</a>|<a href="#">关于我们</a>
+							</p>
+							<pre>
+  经营许可证：无经营许可证 广西电力科技发展无限公司   版权所有：<a href="http://www.mycodes.net/" target="_blank">gxdl</a>
+              </pre>
+							<!-- 底部 -->
+						</div>
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,261 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+address,
+big,
+cite,
+code,
+del,
+em,
+font,
+img,
+ins,
+small,
+strong,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+	margin: 0;
+	padding: 0
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+:focus {
+	outline: 0
+}
+
+a img {
+	border: 0
+}
+
+a {
+	text-decoration: none
+}
+
+img {
+	vertical-align: middle
+}
+
+table {
+	empty-cells: show
+}
+
+ins {
+	text-decoration: none
+}
+
+del {
+	text-decoration: line-through
+}
+
+em {
+	font-style: normal
+}
+
+button::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file]>input[type=button]::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+body {
+	font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+	color: #666;
+	background: #fff;
+	_background-image: url(about:blank);
+	_background-attachment: fixed
+}
+
+input {
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+
+
+.bo_x {
+	width: 1000px;
+	height: 620px;
+	margin: auto;
+	border: red 0px solid;
+}
+
+.dl_k {
+	width: 350px;
+	height: 450px;
+	position: absolute;
+	right: 180px;
+	top: 12px;
+	background-color: #FFFFFF;
+}
+
+
+.dl_logo,
+img {
+	width: 150px;
+	float: left;
+}
+
+.hydl {
+	width: 200px;
+	height: 50px;
+	padding-left: 200px;
+	padding-top: 60px;
+	font-size: 17px;
+}
+
+.dl_bann {
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	left: -2px;
+	top: 110px;
+}
+
+.dl_hed {
+	height: 40px;
+	padding-top: 15px;
+	line-height: 40px;
+	overflow: hidden;
+	/* 垂直 */
+	text-align: center;
+	/* 居中 */
+
+}
+
+
+.s1 {
+	width: 288px;
+	height: 40px;
+	position: absolute;
+	left: 25px;
+	top: 85px;
+	border: #bdbdbd 1px solid;
+}
+
+.zh {
+	width: 50px;
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	overflow: hidden;
+	/* 垂直 */
+	text-align: center;
+	/* 居中 */
+	float: left;
+}
+
+
+.s1_1 {
+	width: 288px;
+	height: 40px;
+	position: absolute;
+	left: 25px;
+	top: 145px;
+	border: #bdbdbd 1px solid;
+}
+
+
+.dl_input>input {
+	width: 200px;
+	height: 35px;
+	position: absolute;
+	top: 2px;
+}
+
+
+.wjmm {
+	width: 75px;
+	height: 20px;
+	position: absolute;
+	top: 205px;
+	right: 25px;
+}
+
+.dl_butt {
+	width: 298px;
+	height: 40px;
+	position: absolute;
+	top: 235px;
+}
+
+.dl_butt>input {
+	width: 286px;
+	height: 40px;
+	font-size: 15px;
+	background-color: #e4393c;
+}
+
+.dl_butt_1 {
+	width: 286px;
+	height: 40px;
+	font-size: 18px;
+	background-color: #e4393c;
+	position: absolute;
+	left: 25px;
+	color: #ffffff;
+}
+.db{
+	width: 800px;
+	height: 30px;
+	position: absolute;
+	left: 255px;
+	
+}
+
+.db_ul>li{
+	display: inline;
+	margin: 10px;
+	font-size: 12px;
+	}
+
+
+.db_1{
+	width: 250px;
+	height: 20px;
+	position: absolute;
+	left: 500px;
+	top: 655px;
+	
+}
+
+a{
+	color: #5b5b5b;
+}

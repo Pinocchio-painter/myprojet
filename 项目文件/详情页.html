@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="keywords" content="购物,服装,化妆品,鞋子,商城,商城" />
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>商品详情</title>
+		<link href="css/public.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script type="text/javascript" src="js/jquery_cart.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/checkOut.css" />
+		<link rel="stylesheet" type="text/css" href="css/Rotation chart.css" />
+		<link href="css/base_2.css" rel="stylesheet" type="text/css">
+		<link href="css/css3.css" rel="stylesheet" type="text/css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<script src="js/base.min.js"></script>
+		<script type="text/javascript" src="js/address_all.js"></script>
+		<script type="text/javascript" src="js/checkout.min.js"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="js/unslider.min.js" type="text/javascript"></script>
+		<script src="js/index.js" type="text/javascript"></script>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/superslide.2.1.js"></script>
+		<script src="js/nicescroll.js"></script>
+		<script type="text/jscript" src="js/jqnav.js"></script>
+
+		<link href="css/master.css" rel="stylesheet" type="text/css">
+		<link href="css/item.css" rel="stylesheet" type="text/css">
+		<script src="js/info-img.js"></script>
+
+
+
+
+
+		<style type="text/css">
+			/* div{
+		border: #000000 1px solid;
+	} */
+		</style>
+	</head>
+
+	<body>
+		<!--顶部快捷菜单-->
+		<div class="shortcut_v2013 alink_v2013">
+			<div class="w">
+				<ul class="fl 1h">
+
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd">您好，欢迎来到66商城！</div>
+					</li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">请登录</a></div>
+					</li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">免费注册</a></div>
+					</li>
+				</ul>
+				<ul class="fr 1h">
+					<li class="fl">
+						<div class="menu_hd"><a href="#">我的订单</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">我的66</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+						<div class="menu_hd"><a href="#">服务中心</a></div>
+					</li>
+					<li class="fl"><i class="shortcut_s"></i></li>
+					<li class="fl">
+					</li>
+				</ul>
+				<span class="clr"></span>
+			</div>
+		</div>
+		<!--顶部快捷菜单-->
+
+
+		<!--顶部Logo及搜索-->
+		<div class="header_2013">
+			<div class="w">
+				<div class="logo_v2013">
+					<a href="#">
+
+						<img class="border_r" src="" width="120" height="50">
+						<img class="border_r" src="" width="120" height="50">
+						<img src="img/logo.png" width="120" height="40">
+					</a>
+				</div>
+				<div class="header_searchbox">
+					<form action="#">
+						<input name="search" type="text" class="header_search_input" placeholder="搜索你心爱的商品吧" autocomplete="off"
+						 x-webkit-speech="" x-webkit-grammar="builtin:search" lang="zh">
+						<button type="submit" class="header_search_btn">搜索</button>
+					</form>
+					<ul class="hot_word">
+						<li><a class="red" href="首页.html" target="_blank">首页</a></li>
+						<li><a target="_blank" href="#">百货五折</a></li>
+						<li><a target="_blank" href="#">限时抢购</a></li>
+						<li><a target="_blank" href="#">年货</a></li>
+						<li><a target="_blank" href="#">电子产品</a></li>
+					</ul>
+				</div>
+
+
+
+				<div id="cart_box" class="cart_box" style="z-index:999;">
+					<a id="cart" class="cart_link" href="#" rel="nofollow">
+						<span class="text">去购物车结算</span>
+						<img src="images/shopping_icon.png" width="24" height="24" class="cart_gif">
+
+						<!-- 购物车没有物品时，隐藏此num -->
+						<span class="num">0</span>
+						<s class="icon_arrow_right"></s>
+					</a>
+
+					<div class="cart_content" id="cart_content">
+						<i class="cart-icons"></i>
+						<!-- 购物车没有物品时，显示cart_content_null、隐藏cart_content_all -->
+						<div class="cart_content_null" style="display: block;">购物车中还没有商品，<br>快去挑选心爱的商品吧！</div>
+
+						<div class="cart_content_all" style="display:none ;">
+							<div class="cart_left_time"><span>五十年</span> 后购物车将被清空，请不要结算</div>
+							<div class="cart_content_center">
+								<div class="cart_con_single">
+									<div class="single_pic">
+										<a href="#" target="_blank" alt="商品" />
+										<img src=" images/goods_img01.jpg" />
+										</a>
+									</div>
+									<div class="single_info">
+										<a href="#" target="_blank" alt="商品" class="name">我的什么商品半详细信息</a><!-- 给用户显示的商品信息 -->
+										<span class="price">数据库中的价格</span><!-- 数据库中的价格 -->
+										<span class="price_plus"> x </span>
+										<span class="price_num">1</span><!-- 数量 -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="con_all">
+							<div class="price_whole"><span>共<span class="num_all">0</span>件商品</span></div>
+							<div><span class="price_gongji">共计<em>￥</em><span class="total_price">0</span></span><a href="#" class="cart_btn"
+								 rel="nofollow">去购物车结算</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!--顶部Logo及搜索-->
+
+				<div style="width: 100%; height: 105px;"></div>
+				<!--  导航条    end-->
+
+				<!-- 购物车 -->
+				<div class="border_top_cart">
+					<script src="http://www.jq22.com/jquery/vue.min.js"></script>
+					<script type="text/javascript" src="js/Rotation chart JS.js"></script>
+
+					<script type="text/javascript">
+						var checkoutConfig = {
+							addressMatch: 'common',
+							addressMatchVarName: 'data',
+							hasPresales: false,
+							hasBigTv: false,
+							hasAir: false,
+							hasScales: false,
+							hasGiftcard: false,
+							totalPrice: 244.00,
+							showCouponBox: 0,
+							invoice: {
+								NA: "0",
+								personal: "1",
+								company: "2",
+								electronic: "4"
+							}
+						};
+						var miniCartDisable = true;
+					</script>
+
+
+					<script id="newAddrTemplate" type="text/x-dot-template">
+						<dl class="item selected" data-isnew="true" data-consignee="{{=it.consignee}}" data-tel="{{=it.tel}}" data-province="{{=it.province}}" data-provincename="{{=it.provinceName}}" data-city="{{=it.city}}" data-cityname="{{=it.cityName}}" data-county="{{=it.county}}" data-countyname="{{=it.countyName}}" data-zipcode="{{=it.zipcode}}" data-street="{{=it.street}}" data-tag="{{=it.tag}}">
+            <dt>
+                <strong class="itemConsignee">{{=it.consignee}}</strong>
+                {{? it.tag }}
+                    <span  class="itemTag tag">{{=it.tag}}</span>
+                {{?}}
+            </dt>
+            <dd>
+                <p class="tel itemTel">{{=it.tel}}</p>
+                <p  class="itemRegion">{{=it.provinceName}} {{=it.cityName}} {{=it.countyName}}</p>
+                <p  class="itemStreet">{{=it.street}} ({{=it.zipcode}})</p>
+                <span class="edit-btn J_editAddr">编辑</span>
+            </dd>
+        </dl>
+</script>
+				</div>
+
+				<!--头部body部分结束-->
+
+
+				<div class="dao">
+					<div style="width: 500px; height: 50px; ">
+						<a href="#" class="dao_01">手机数码</a>　>　
+						<a href="#">手机配件</a>　>　
+						<a href="#">耳机</a>　>　
+						<a href="#">耳挂式</a>　>　
+						<a href="#">铁三角系列</a>
+					</div>
+				</div>
+
+				<div class="item_info">
+					<div id="preview" class="spec-preview">
+						<span class="jqzoom"><img jqimg="images/item/item_pics_01.jpg" src="images/item/item_pic_01.jpg" /></span>
+						<!--缩图开始-->
+						<div class="items">
+							<ul>
+								<li><img alt="铁三角" bimg="images/item/item_pics_01.jpg" src="images/item/item_pic_01.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="铁三角" bimg="images/item/item_pics_02.jpg" src="images/item/item_pic_02.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="铁三角" bimg="images/item/item_pics_03.jpg" src="images/item/item_pic_03.jpg" onmousemove="preview(this);"></li>
+								<li><img alt="铁三角" bimg="images/item/item_pics_04.jpg" src="images/item/item_pic_04.jpg" onmousemove="preview(this);"></li>
+							</ul>
+						</div>
+						<!--缩图结束-->
+					</div>
+					<div class="item_txt">
+						<div class="item_txt_top">
+							<div class="item_top_pic"><img src="images/item/item_pic_01.jpg"></div>
+							<div class="item_top_bt">铁三角（Audio-technica） ATH-COR150 WH 耳挂式/耳塞式两种佩戴方式随心换 个性导线收藏滚轮</div>
+							<div class="item_top_tips">【Duang~~三月春雷一声响】耳机、音箱自营商品每满199减30，极低风暴进行中，活动时间3.2-3.6 23:59</div>
+							<div class="item_top_lei">￥198.00</div>
+							
+							<button name="提交" type="submit" class="item_top_go" value="立即购买">立即购买</button>
+							<button name="提交" type="submit" class="item_top_go2" value="加入购物车">加入购物车</button>
+							<!-- <input name="提交" type="submit" class="item_top_go" value="立即购买">
+							<input name="提交" type="submit" class="item_top_go2" value="加入购物车"> -->
+
+							<div class="item_top_tg">本商品由<a href="#">幻响科技</a>发货但不提供售后服务</div>
+							<div class="item_top_ps">已有<span>28651</span>人购买</div>
+							<a href="#" class="item_top_gz">关注该商品</a>
+						</div>
+						<div class="item_txt_bot">
+							<div class="item_class">
+								<div class="item_class_l">选择颜色：</div>
+								<div class="item_class_r">
+									<ul>
+										<li class="item_class_li">象牙白<span></span></li>
+										<li>朱砂红<span></span></li>
+										<li>天空蓝<span></span></li>
+										<li>青草绿<span></span></li>
+										<li>可爱粉<span></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="item_class">
+								<div class="item_class_l">选择版本：</div>
+								<div class="item_class_r">
+									<ul>
+										<li class="item_class_li">清新版<span></span></li>
+										<li>运动版<span></span></li>
+										<li>畅响版<span></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item_conter">
+
+					<div class="item_conter_l">
+						<div class="item_mall">
+							<div class="item_mall_logo"><img src="images/item/logo.png"></div>
+							<a href="#" class="item_mall_bt">幻响科技 ( I love music )</a>
+							<div class="item_mall_sj">商家评分：<span>4.8分</span></div>
+							<div class="item_mall_sj">在线客服：<a href="#">幻响小客服</a></div>
+							<div class="item_mall_sj">商家地址：<span>广州 天河区</span></div>
+							<a href="#" class="item_mall_sj"><span style="margin-left:30px!important"><img src="images/item/love.png"></span>关注该商家</a>
+							<div class="clear"></div>
+						</div>
+						<div class="item_his">
+							<div class="item_his_bts">浏览历史</div>
+							<ul>
+								<li>
+									<a href="#"><img src="images/item/item_pic_01.jpg"></a>
+									<div class="item_his_bt"><a href="#">铁三角（Audio-technica） ATH-COR150 WH 耳挂式/耳塞式两种佩戴方式随心换 个性导线收藏滚轮</a></div>
+									<span style="float:left;margin-left:10px;color:#ea4848;">￥198.00</span><span style="float:right;margin-right:15px;">已有28651人购买</span>
+								</li>
+								<li>
+									<a href="#"><img src="images/item/item_pic_02.jpg"></a>
+									<div class="item_his_bt"><a href="#">铁三角（Audio-technica） ATH-COR150 WH 耳挂式/耳塞式两种佩戴方式随心换 个性导线收藏滚轮</a></div>
+									<span style="float:left;margin-left:10px;color:#ea4848;">￥198.00</span><span style="float:right;margin-right:15px;">已有28651人购买</span>
+								</li>
+
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!-- 用户评价 -->
+
+					<div class="item_conter_r">
+						<div class="item_con_r1">
+							<ul class="item_con_r1_ul">
+								<li class="item_con_li item_li_1">商品详情</li>
+								<li class="item_li_2">商品评价</li>
+								<li class="item_li_3">商家介绍</li>
+							</ul>
+							<div class="item_con_i1">
+								<ul>
+									<li>商品名称：铁三角ATH-COR150 WH</li>
+									<li>商品编号：1068317</li>
+									<li>品牌名称：铁三角（Audio-technica）</li>
+									<li>上架时间：2014-03-06 12:55:49</li>
+									<li>佩戴方式：入耳式，耳塞式，耳挂式</li>
+									<li>商品产地：中国大陆</li>
+									<li>功能用途：音乐耳机，手机耳机</li>
+								</ul>
+								<div class="item_con_info">
+									<img src="images/item/info_01.jpg">
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="item_con_i2">
+								<div class="item_eva_t">
+									<div class="item_eva_t1">
+										<span class="span_1">100%</span>
+										<p class="span_2">商品好评率</p>
+									</div>
+									<div class="item_eva_t2">
+										<ul>
+											<li><span>好评:80%</span>
+												<dl>
+													<dd style="width:80%;"></dd>
+												</dl>
+											</li>
+											<li><span>中评:15%</span>
+												<dl>
+													<dd style="width:15%;"></dd>
+												</dl>
+											</li>
+											<li><span>差评:5%</span>
+												<dl>
+													<dd style="width:5%;"></dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+									<div class="item_eva_t3">发表评价即可获得信币，前五位评价用户可获得双倍信币：详见<a href="#">信币规则</a></div>
+								</div>
+								<div class="item_eva_b">
+									<ul class="item_con_r1_ul">
+										<li class="item_con_li item_b1">全部评论</li>
+										<li class="item_b2">好评</li>
+										<li class="item_b3">中评</li>
+										<li class="item_b4">差评</li>
+									</ul>
+									<div class="item_eva_pl item_eva_b1" style="display:block;">
+										<ul>
+											<li>
+												<div class="item_eva_head"><img src="images/item/pl_head.jpg"></div>
+												<div class="item_eva_box">
+													<div class="item_eva_box1">
+														<div class="item_eva_name">明眸皓齿Amor丶</div>
+														<div class="item_eva_star"><span></span></div>
+													</div>
+													<div class="item_eva_box2">款式很好看，不了业很有档次，适合皮肤白的人川款式很好看，不了业很有档次，适合皮肤白的人川款式很好看，不了业很有档次，适合皮肤白的人川款式很好看，不了业很有档次，适合皮肤白的人川款式很好看，不了业很有档次，适合皮肤白的人川款式很好看，不了业很有档次，适合皮肤白的人川</div>
+													<div class="item_eva_box3">
+														<ul>
+															<li><img src="images/item/item_pic_01.jpg"></li>
+															<li><img src="images/item/item_pic_02.jpg"></li>
+														</ul>
+														<span>评论时间：2015-03-06</span>
+													</div>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item_con_i3">
+								<div class="item_con_info">
+									<img src="images/item/info_01.jpg">
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<!-- 底部 -->
+				<div class="bottom">
+					<div class="bottom_city"></div>
+
+					<div class="footer_v2013 bottom-about" style="height: 200px;">
+						<div class="w">
+							<p class="foot_p1">
+								<a href="#">首页</a>|<a href="#">招聘英才</a>|<a href="#">广告合作</a>|<a href="#">联系我们</a>|<a href="#">关于我们</a>
+							</p>
+							<pre>
+  经营许可证：无经营许可证 广西电力科技发展无限公司   版权所有：<a href="http://www.gxdlxy.cn/" target="_blank">gxdl</a>
+              </pre>
+							<!-- 底部 -->
+						</div>
+
+
+
+	</body>
+
+</html>
